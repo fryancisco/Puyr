@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentehar Pu'yr - Artesanato Indígena</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('/img/\ \(61\).jpeg');
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 0 2em ;
+        }
+
+        img {
+            max-width: 244px;
+            height: 244px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #fale-conosco-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        #contato-form {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 998;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tentehar Pu'yr - Artesanato Indígena</h1>
+    </header>
+
+    <nav>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/index.html">Artesanato</a>
+        <a href="/curso.html">Curso de Artesanato Indigena</a>
+    </nav>
+
+    <section id="artesanato">
+        <h2>Artesanato Indígena</h2>
+        <p>O artesanato indígena desempenha um papel significativo como fonte de renda para muitas comunidades indígenas ao redor do mundo. Muitos artesãos indígenas produzem uma variedade de itens artesanais, como cestas, tecidos, joias, esculturas e objetos de decoração, que são vendidos localmente ou em mercados mais amplos. A comercialização desses produtos pode gerar receitas diretas para as famílias e comunidades, essa pratica não só contribui para a economia local, mas também desempenha um papel vital na preservação das tradições culturais e na promoção da sustentabilidade econômica.</p>
+
+        <!-- Exemplo de galeria de imagens -->
+        <div>
+            <img class="imagem" src="/img/ (1).jpeg" alt="Artesanato 1">
+            <img class="imagem" src="/img/ (2).jpeg" alt="Artesanato 2">
+            <img class="imagem" src="/img/ (3).jpeg" alt="Artesanato 3">
+            <img class="imagem" src="/img/ (4).jpeg" alt="Artesanato 4">
+            <img class="imagem" src="/img/ (5).jpeg" alt="Artesanato 5">
+            <img class="imagem" src="/img/ (6).jpeg" alt="Artesanato 6">
+            <img class="imagem" src="/img/ (7).jpeg" alt="Artesanato 7">
+            <img class="imagem" src="/img/ (8).jpeg" alt="Artesanato 8">
+            <img class="imagem" src="/img/ (9).jpeg" alt="Artesanato 9">
+            <img class="imagem" src="/img/ (10).jpeg" alt="Artesanato 10">
+            <img class="imagem" src="/img/ (11).jpeg" alt="Artesanato 11">
+            <img class="imagem" src="/img/ (12).jpeg" alt="Artesanato 12">
+            <img class="imagem" src="/img/ (13).jpeg" alt="Artesanato 13">
+            <img class="imagem" src="/img/ (14).jpeg" alt="Artesanato 14">
+            <img class="imagem" src="/img/ (15).jpeg" alt="Artesanato 15">
+            <img class="imagem" src="/img/ (16).jpeg" alt="Artesanato 1">
+            
+        </div>
+    </section>
+
+    <div>
+        <button id="fale-conosco-btn" onclick="toggleForm()">Fale Conosco</button>
+
+    <div id="contato-form">
+        <h2>Fale Conosco</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var form = document.getElementById('contato-form');
+            form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tentehar Pu'yr - Artesanato Indígena</p>
+    </footer>
+</body>
+</html>
